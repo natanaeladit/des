@@ -1,0 +1,22 @@
+DES group members:
+Natanael Adityasatria 4417992
+Mart Lubbers 
+
+2a
+The output describes the first task is the task that is first executed by the syntax rt_task_start. So the task order is ordered from the source code's order (in this case: inside loop, the lowest counter will be run first)
+
+2b
+The output describes that we can pass the integer argument that belongs to the task. In addition to the task name (string), the task can also has an integer value.
+
+2c
+There is no differences in the output with the exercise 2b.
+The order is the same as in exercise 2b.
+From the source code, this is because we put each of tasks in a loop.
+So the first task created and the first task started in the loop will
+be run first time. For the next loop, it will create and start the
+next task. So it is like the matter of the code order not the task
+priority.
+
+2d
+It is because we use Sleep of 1 second then the loop(while) will be run every one second. All tasks have the same priority, but each of tasks has different periods.
+The first task that has period of 1 will be run every seconds while the task that has period of 2 will be run once in two seconds. In addition, the task that has period of 3 will be run once in three seconds.
